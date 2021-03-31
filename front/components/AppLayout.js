@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import {Menu, Input, Row, Col} from 'antd';
 
+import styled from 'styled-components';
+
+const SearchInput = styled(Input.Search)`
+    vertical-align: middle;
+`;
+
 import UserProfile from '../components/UserProfile';
 import LoginForm from '../components/LoginForm';
 
@@ -26,7 +32,7 @@ const AppLayout = ({children}) => {
             </Menu>
             <Row gutter={8} >
                 <Col xs={24} md={6} >
-                    {isLoggedIn ? <UserProfile /> : <LoginForm/> }
+                    {isLoggedIn ? <UserProfile /> : <LoginForm setIsLoggedIn={setIsLoggedIn} /> }
                 </Col>
                 <Col xs={24} md={12} >
                     {children}
