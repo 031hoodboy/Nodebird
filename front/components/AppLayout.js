@@ -38,7 +38,7 @@ const AppLayout = ({children}) => {
                     {children}
                 </Col>
                 <Col xs={24} md={6} >
-                    <a href="https://www.instagram.com/031_hood_boy" target="_blank" rel="horeferrer noopener" >Made by Hoodboy</a>
+                    <a href="https://www.instagram.com/031_hood_boy" target="_blank" rel="noreferrer noopener" >Made by Hoodboy</a>
                 </Col>
             </Row>
         </div>
